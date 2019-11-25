@@ -13,7 +13,7 @@ set(CMAKE_ASM_NASM_OBJECT_FORMAT elf32)
 enable_language(ASM_NASM)
 # Setup linker
 # STUPID HACK WARNING!
-set(CMAKE_C_LINK_EXECUTABLE "/Users/lotteerickson/pkg/clang-9.0.0/bin/ld.lld CMakeFiles/KernelTest.elf.dir/main.c.o \
-    CMakeFiles/KernelTest.elf.dir/boot.asm.o -T ../linker.ld -o kernel.sys")
+set(CMAKE_C_LINK_EXECUTABLE "/Users/lotteerickson/pkg/clang-9.0.0/bin/ld.lld CMakeFiles/kernel.sys.dir/main.c.o \
+    CMakeFiles/kernel.sys.dir/boot.asm.o -T ../linker.ld -o kernel.sys")
 
-add_executable(KernelTest.elf main.c boot.asm)
+add_executable(kernel.sys main.c boot.asm)
