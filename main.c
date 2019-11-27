@@ -1,6 +1,7 @@
 #include "serial.h"
 #include "config.h"
 #include "stdio.h"
+#include "stdint.h"
 
 uintptr_t early_init[] = {
 #ifdef SERIAL_ENABLED
