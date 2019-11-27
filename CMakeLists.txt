@@ -15,6 +15,7 @@ enable_language(ASM_NASM)
 # STUPID HACK WARNING!
 set(CMAKE_C_LINK_EXECUTABLE "/usr/local/opt/llvm/bin/ld.lld --script=../linker.ld -o kernel.sys \
     CMakeFiles/kernel.sys.dir/boot.asm.o CMakeFiles/kernel.sys.dir/main.c.o CMakeFiles/kernel.sys.dir/vga.c.o \
-    CMakeFiles/kernel.sys.dir/serial.c.o CMakeFiles/kernel.sys.dir/io.c.o CMakeFiles/kernel.sys.dir/string.c.o")
+    CMakeFiles/kernel.sys.dir/serial.c.o CMakeFiles/kernel.sys.dir/io.c.o CMakeFiles/kernel.sys.dir/string.c.o \
+    CMakeFiles/kernel.sys.dir/stdio.c.o")
 
-add_executable(kernel.sys boot.asm main.c vga.c serial.c io.c string.c config.h vga.h stdint.h io.h string.h serial.h)
+add_executable(kernel.sys boot.asm main.c vga.c serial.c io.c string.c stdio.c config.h vga.h stdint.h io.h string.h serial.h stdio.h)
