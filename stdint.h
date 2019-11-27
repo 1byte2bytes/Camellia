@@ -17,5 +17,6 @@ typedef unsigned long long uint64_t;
 
 // HACK
 typedef uint64_t size_t;
+typedef uint32_t uintptr_t;
 
 #endif //CAMELLIA_STDINT_H
