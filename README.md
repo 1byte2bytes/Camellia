@@ -8,5 +8,5 @@ brew install llvm nasm cmake qemu
 
 ### Ubuntu
 ```
-sudo apt install llvm nasm qemu grub-common grub-pc-bin xorriso
+sudo apt install llvm clang build-essential nasm qemu grub-common grub-pc-bin xorriso
 ```
