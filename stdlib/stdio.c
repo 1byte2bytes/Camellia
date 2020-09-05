@@ -1,5 +1,5 @@
 //
-// Created by Lotte Erickson on 27/11/2019.
+// Created by Sydney Anne on 27/11/2019.
 //
 
 #include <modules/serial/serial.h>

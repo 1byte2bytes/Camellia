@@ -1,5 +1,5 @@
 //
-// Created by Lotte Erickson on 25/11/2019.
+// Created by Sydney Anne on 25/11/2019.
 //
 
 #ifndef CAMELLIA_STRING_H
