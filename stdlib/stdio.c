@@ -2,9 +2,9 @@
 // Created by Lotte Erickson on 27/11/2019.
 //
 
-#include "serial.h"
-#include "vga.h"
-#include "config.h"
+#include <modules/serial/serial.h>
+#include <modules/vga/vga.h>
+#include <config.h>
 
 // TODO: make a better printf
 void kprintf(const char* str) {

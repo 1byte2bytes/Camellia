@@ -5,7 +5,7 @@
 #ifndef CAMELLIA_STRING_H
 #define CAMELLIA_STRING_H
 
-#include "stdint.h"
+#include <stdint.h>
 
 extern size_t strlen(const char* str);
 

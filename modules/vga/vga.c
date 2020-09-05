@@ -2,8 +2,11 @@
 // Created by Lotte Erickson on 25/11/2019.
 //
 
-#include "stdint.h"
-#include "string.h"
+#include <config.h>
+#ifdef VGA_ENABLED
+
+#include <stdint.h>
+#include <string.h>
 
 enum vga_color {
     VGA_COLOR_BLACK = 0,
@@ -87,3 +90,5 @@ void vga_write_str(const char* data)
 {
     vga_write(data, strlen(data));
 }
+
+#endif

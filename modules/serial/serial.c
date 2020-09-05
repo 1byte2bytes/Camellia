@@ -2,8 +2,11 @@
 // Created by Lotte Erickson on 25/11/2019.
 //
 
-#include "io.h"
-#include "string.h"
+#include <config.h>
+#ifdef SERIAL_ENABLED
+
+#include <io.h>
+#include <string.h>
 
 #define PORT 0x3f8   /* COM1 */
 
@@ -42,3 +45,5 @@ void serial_write_str(const char* str) {
         serial_write(str[i]);
     }
 }
+
+#endif

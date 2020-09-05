@@ -1,0 +1,19 @@
+before_script:
+  - apt-get update -y
+  - apt-get install build-essential llvm clang qemu nasm grub-common grub-pc-bin xorriso -y
+  - chmod +x build.sh
+
+stages:
+  - build
+
+build:
+  stage: build
+  image: debian:buster
+  except:
+    - tags
+  script:
+    - ./build.sh
+  artifacts:
+    paths:
+      - kernel.sys
+      - build.iso

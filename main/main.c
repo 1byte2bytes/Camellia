@@ -1,8 +1,7 @@
-#include "serial.h"
-#include "vga.h"
-#include "config.h"
-#include "stdio.h"
-#include "stdint.h"
+#include <modules/serial/serial.h>
+#include <modules/vga/vga.h>
+#include <config.h>
+#include <stdio.h>
 
 void kernel_main() {
     // Init early modules
